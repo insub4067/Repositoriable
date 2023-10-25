@@ -56,7 +56,7 @@ class ItemRepository: Repositoriable {
 ```swift
 private let repository = ItemRepository()
 
-let item: Item = .....
+let item: ItemModel = .....
 
 repository.add(item)
 repository.updateItem(item)
