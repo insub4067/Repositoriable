@@ -63,7 +63,7 @@ repository.add(item)
 repository.updateItem(item)
 repository.delete(item)
 
-let foundIten = repository.get(keyPath: \.id, value: 1)
+let foundItem = repository.get(keyPath: \.id, value: 1)
 let filteredItems = repository.get { $0.size == .large && $0.name == "item" }
 let allItems = repository.getAll()
 ```
