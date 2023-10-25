@@ -26,8 +26,8 @@ struct ItemUseCase {
         let filteredItems = repository.get { $0.size == .large && $0.name == "item" }
         let getAll = repository.getAll()
         
-        print(matchedKeypath)
-        print(filteredItems)
-        print(getAll)
+        print(matchedKeypath) // ItemModel(id: 1, name: "item", size: SwiftUIPractice.ItemModel.ItemSize.large)
+        print(filteredItems) // [ItemModel(id: 1, name: "item", size: SwiftUIPractice.ItemModel.ItemSize.large)]
+        print(getAll) // [ItemModel(id: 1, name: "item", size: SwiftUIPractice.ItemModel.ItemSize.large)]
     }
 }
