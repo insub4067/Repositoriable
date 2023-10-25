@@ -51,6 +51,7 @@ class ItemRepository: Repositoriable {
         db.filter(filter)
     }
 }
+```
 
 ## UseCase
 ```swift
